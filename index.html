@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Workwise</title>
+    </head>
+    <body class="body-index">
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img class="logo-workwise logo-index" src="img/logo-index.png" ></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex">
+                  <input class="form-control me-2 searchInput" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <img class="icon" style="margin-left: 19px;" src="img/Home_50px.png">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <img class="icon" style="margin-left: 38px;" src="img/Company_50px.png">
+                    <a class="nav-link" href="#">Companies</a>
+                  </li>
+                  <li class="nav-item">
+                    <img class="icon" style="margin-left: 25px;" src="img/Puzzle_50px.png">
+                    <a class="nav-link" href="#">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <img class="icon" style="margin-left: 23px;" src="img/People_50px.png">
+                    <a class="nav-link" href="#">Profiles</a>
+                  </li>
+                  <li class="nav-item">
+                    <img class="icon" style="margin-left: 14px;" src="img/Job Seeker_50px.png">
+                    <a class="nav-link" href="#">Jobs</a>
+                  </li>
+                  <li class="nav-item">
+                    <img class="icon" style="margin-left: 32px;" src="img/Secured Letter_50px.png">
+                    <a class="nav-link" href="#">Messages</a>
+                  </li>
+                  <li class="nav-item">
+                    <img class="icon" style="margin-left: 39px;" src="img/Quick Mode On_50px.png">
+                    <a class="nav-link" href="#">Notification</a>
+                  </li>
+                  <div class="line-nav"></div>
+                  <img class="john-image" src="img/John.jpg">
+                  <li class="nav-item dropdown" style="margin-top: 6px;">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        John
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <p class="dropdown-item">Setting</p>
+                        <hr>
+                        <a class="dropdown-item" href="#">Account Setting</a>
+                        <a class="dropdown-item" href="#">Privacy</a>
+                        <a class="dropdown-item" href="#">Faqs</a>
+                        <a class="dropdown-item" href="#">Terms & Conditions</a>
+                        <hr>
+                        <a class="dropdown-item" href="sign-in.html">Log out</a>
+                    </div>
+                </li>
+                <div class="line-nav"></div>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="row">
+            <div class="div-left col-lg-3 col-md-12">
+              <div style="background-color: #e44d3a;width: 341px; height: 126px;">
+                <img style="width: 138px; height: 138px; border: 6px solid white;margin-top: 62px;" class="john-image" src="img/John.jpg">
+              </div>
+              <h2 style="margin-top: 77px;" >John Doe</h2>
+              <p class="job">Graphic Designer at Self Employed</p>
+              <hr>
+              <h3>Following</h3>
+              <p id="number-following">34</p>
+              <hr>
+              <h3>Followers</h3>
+              <p>155</p>
+              <hr>
+              <a href="#">View Profile</a>
+            </div>
+
+            <div class="div-center col-lg-5 col-md-12">
+              <hr>
+              <img class="john-image" src="img/John.jpg">
+              <div class="d-grid gap-2 d-md-block">
+
+                <input type="button" value="Post a Job" class="add btn btn-primary" id="addjop" onclick="clickBtnJop()"/>
+                <!--  class="add" id="add" onclick="clickBtn()" -->
+                <input type="button" value="Post a Project" class=" btn btn-primary btn-primary1"/>
+                <fieldset id="buildyourform"></fieldset>
+                <input type="button" value="Share" class="add" id="preview"/>
+                
+              </div>
+            </div>
+
+
+            <div class="div-right col-lg-3 col-md-12">
+              <img src="img/logo.png">
+              <h4>Track Time on Workwise</h4>
+              <p>Pay only for the Hours worked</p>
+              <hr>
+              <a style="color: #212529;text-decoration: none;" href="sign-up.html"><h4>SIGN UP</h4></a>
+              <a href="sign-up.html">Learn More</a>
+            </div>
+
+            <div class="div-left-two ">
+              <h4>Suggestions</h4>
+              <a href="#"><img class="icon-ellipsis" src="img/Menu Vertical_48px.png"></a>
+              <hr>
+              <img src="img/137296624_1762857667216023_5001889832414271592_n.jpg">
+              <h6>Jessica William</h6>
+              <div class="icon-plus">
+                <a href="#" type="button"><img src="img/Plus Math_52px.png"></a>
+              </div>
+              <p>Graphic Designer</p>
+
+              <img src="img/52540441_318597819008786_940723731905380352_n.jpg">
+              <h6>John Doe</h6>
+              <div class="icon-plus">
+                <a href="#"><img src="img/Plus Math_52px.png"></a>
+              </div>
+              <p>PHP Developer</p>
+
+              <img src="img/images (1).jpg">
+              <h6>Poonam</h6>
+              <div class="icon-plus">
+                <a href="#"><img src="img/Plus Math_52px.png"></a>
+              </div>
+              <p>Wordpress Developer</p>
+
+              <img src="img/depositphotos_34490345-stock-photo-confident-casual-unshaven-young-man.jpg">
+              <h6>Bill Gates</h6>
+              <div class="icon-plus">
+                <a href="#"><img src="img/Plus Math_52px.png"></a>
+              </div>
+              <p>C & C++ Developer</p>
+
+              <img src="img/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg">
+              <h6>Jessica William</h6>
+              <div class="icon-plus">
+                <a href="#"><img src="img/Plus Math_52px.png"></a>
+              </div>
+              <p>Graphic Designer</p>
+
+              <img src="img/138074050_3724079107615032_3895583162190385421_n.jpg">
+              <h6>John Doe</h6>
+              <div class="icon-plus">
+                <a href="#"><img src="img/Plus Math_52px.png"></a>
+              </div>
+              <p>PHP Developer</p>
+              <a href="#" class="view-more">View More</a>
+            </div>
+
+
+            <div class="post-project"></div>
+
+
+            <div class="div-center-two container-center-two col-lg-5 col-md-12">
+              <img class="john-image" src="img/John.jpg">
+              <h4>John Doe</h4><br>
+              <a href="#"><img class="icon-ellipsis" src="img/Menu Vertical_48px.png"></a>
+              <div  class="time">
+                <img class="icon" src="img/Time_50px.png">
+                <p>3 min ago</p><br>
+              </div>
+              <img src="img/epic-coder.jpg">
+              <p style="display: inline-block;margin-right: 15px;">Epic Coder</p>
+              <div style="background-color: #53d690;display: inline-block; border-radius: 50%;padding: 0px 3px 3px 3px;"><img class="icon" src="img/Paper Plane_50px.png"></div>
+              <p>India</p>
+
+              <div class="icon-letter">
+                <img src="img/Secured Letter_64px.png">
+              </div>
+
+              <div class="icon-bookmark">
+                <img class="icon" src="img/Bookmark_64px.png">
+              </div>
+
+              <h5>Senior Wordpress Developer</h5>
+              <button class="btn btn-primary " type="button">Full Time</button>
+              <h5 style="display: inline-block;">$ 30 / hr</h5>
+              <p style="color: #666666;margin-top: 17px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aliquam luctus <br> hendrerit metus, ut ullamcoper quam finibus at. Etiam id magna sit amet...</p><br>
+              <a href="#">view more</a><br><br>
+
+              <span>HTML</span>
+              <span>PHP</span>
+              <span>CSS</span>
+              <span>Javascript</span>
+              <span>Wordpress</span>
+
+              <hr style="margin-top: 2rem;margin-bottom: 2rem;">
+              <img class="icon" src="img/Love_52px.png">
+              <p><a href="#" class="like-comment">Like</a></p>
+              <img src="img/25.png">
+              <img class="icon" src="img/Comments_50px.png">
+              <p><a href="#" class="like-comment">Comment 15</a></p>
+              <div class="view">
+                <img class="icon" src="img/Eye_48px.png">
+                <p><a href="#" class="like-comment eye">Views 50</a></p>
+              </div>
+            </div><br>
+
+
+            <div class="div-right-two col-lg-3 col-md-12">
+              <h4>Top Jops</h4>
+              <a href="#"><img class="icon-ellipsis" src="img/Menu Vertical_48px.png"></a>
+              <hr>
+
+              <fieldset id="buildyourjop"></fieldset>
+              <input type="button" value="Add" class="add" id="share" onclick="resetJop()"/>
+
+              <div id="jops"></div>
+              <h6>Senior Product Designer</h6><h6 class="hr">$25/hr</h6>
+              <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit...</p>
+              <h6>Senior UI/UX Designer</h6><h6 class="hr">$25/hr</h6>
+              <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit...</p>
+              <h6>Junior Seo Designer</h6><h6 class="hr">$25/hr</h6>
+              <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit...</p>
+              <h6>Senior PHP Designer</h6><h6 class="hr">$25/hr</h6>
+              <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit...</p>
+            </div>
+
+
+            <div class="div-left-three col-lg-3 col-md-12">
+              <a href="#" class="links">Help Center</a>
+              <div class="line-links">|</div>
+
+              <a href="#" class="links">About</a>
+              <div class="line-links">|</div>
+
+              <a href="#" class="links">Privacy Policy</a><br>
+
+              <a href="#" class="links">Community Guidelines</a>
+              <div class="line-links">|</div>
+
+              <a href="#" class="links">Cookies Policy</a><br>
+
+              <a href="#" class="links">Career</a>
+              <div class="line-links">|</div>
+
+              <a href="#" class="links">Language</a>
+              <div class="line-links">|</div>
+
+              <a href="#" class="links">Copyright Policy</a><br>
+
+              <img src="img/logo.png">
+              <h5>Workwise</h5>
+              <p class="footer-text">&copy; Copyright 2019 </p>
+
+            </div>
+
+
+            <div class="div-center-three col-lg-5 col-md-12">
+              <h4>Top Profiles</h4>
+              <a href="#"><img class="icon-ellipsis" src="img/Menu Vertical_48px.png"></a>
+
+              <div class="container slider-ct">
+                <div class="row slide-wr">
+                  <div class="col-sm-4 slide">
+                    <img src="img/mand-holding-cup_1258-340.jpg">
+                    <h5>John Doe</h5>
+                    <p>Graphic Designer</p>
+                    <div class="follow"><a href="#">Follow</a></div>
+                    <div class="message"><a href="#"><img class="icon-message" src="img/Secured Letter_50px.png"></a></div>
+                    <div class="hire"><a href="#">Hire</a></div>
+                    <hr>
+                    <a href="#" class="View-profile">View Profile</a>
+                  </div>
+
+                  <div class="col-sm-4 slide">
+                    <img src="img/images (1).jpg">
+                    <h5>John Doe</h5>
+                    <p>Graphic Designer</p>
+                    <div class="follow"><a href="#">Follow</a></div>
+                    <div class="message"><a href="#"><img class="icon-message" src="img/Secured Letter_50px.png"></a></div>
+                    <div class="hire"><a href="#">Hire</a></div>
+                    <hr>
+                    <a href="#" class="View-profile">View Profile</a>
+                  </div>
+
+                  <div class="col-sm-4 slide">
+                    <img src="img/photo-1438761681033-6461ffad8d80.jpg">
+                    <h5>John Doe</h5>
+                    <p>Graphic Designer</p>
+                    <div class="follow"><a href="#">Follow</a></div>
+                    <div class="message"><a href="#"><img class="icon-message" src="img/Secured Letter_50px.png"></a></div>
+                    <div class="hire"><a href="#">Hire</a></div>
+                    <hr>
+                    <a href="#" class="View-profile">View Profile</a>
+                  </div>
+
+                  <div class="col-sm-4 slide" >
+                    <img src="img/images (2).jpg">
+                    <h5>John Doe</h5>
+                    <p>Graphic Designer</p>
+                    <div class="follow"><a href="#">Follow</a></div>
+                    <div class="message"><a href="#"><img class="icon-message" src="img/Secured Letter_50px.png"></a></div>
+                    <div class="hire"><a href="#">Hire</a></div>
+                    <hr>
+                    <a href="#" class="View-profile">View Profile</a>
+                  </div>
+
+                  <div class="col-sm-4 slide">
+                    <img src="img/images.jpg">
+                    <h5>John Doe</h5>
+                    <p>Graphic Designer</p>
+                    <div class="follow"><a href="#">Follow</a></div>
+                    <div class="message"><a href="#"><img class="icon-message" src="img/Secured Letter_50px.png"></a></div>
+                    <div class="hire"><a href="#">Hire</a></div>
+
+                    <hr>
+
+                    <a href="#" class="View-profile">View Profile</a>
+                  </div>
+                </div>
+                <button id="back">&lt; </button>
+                <button id="forward"> &gt;</button>
+              </div>
+
+            </div>
+
+
+            <div class="div-center-two div-center-four container-center-two col-lg-5 col-md-12">
+              <img class="john-image" src="img/John.jpg">
+              <h4>John Doe</h4><br>
+              <a href="#"><img class="icon-ellipsis" src="img/Menu Vertical_48px.png"></a>
+              <div  class="time">
+                <img class="icon" src="img/Time_50px.png">
+                <p>3 min ago</p><br>
+              </div>
+              <img src="img/epic-coder.jpg">
+              <p style="display: inline-block;margin-right: 15px;">Epic Coder</p>
+              <div style="background-color: #53d690;display: inline-block; border-radius: 50%;padding: 0px 3px 3px 3px;"><img class="icon" src="img/Paper Plane_50px.png"></div>
+              <p>India</p>
+
+              <button class="btn btn-primary btn-bid " type="button">Bid Now</button>
+
+              <div class="icon-letter">
+                <img src="img/Secured Letter_64px.png">
+              </div>
+
+              <div class="icon-bookmark">
+                <img class="icon" src="img/Bookmark_64px.png">
+              </div>
+
+              <h5>Senior Wordpress Developer</h5>
+              <button class="btn btn-primary " type="button">Full Time</button>
+              <h5 style="display: inline-block;">$ 30 / hr</h5>
+              <p style="color: #666666;margin-top: 17px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aliquam luctus <br> hendrerit metus, ut ullamcoper quam finibus at. Etiam id magna sit amet...</p><br>
+              <a href="#">view more</a><br><br>
+
+              <span>HTML</span>
+              <span>PHP</span>
+              <span>CSS</span>
+              <span>Javascript</span>
+              <span>Wordpress</span>
+
+              <hr style="margin-top: 2rem;margin-bottom: 2rem;">
+              <img class="icon" src="img/Love_52px.png">
+              <p><a href="#" class="like-comment">Like</a></p>
+              <img src="img/25.png">
+              <img class="icon" src="img/Comments_50px.png">
+              <p><a href="#" class="like-comment">Comment 15</a></p>
+              <div class="view">
+                <img class="icon" src="img/Eye_48px.png">
+                <p><a href="#" class="like-comment eye">Views 50</a></p>
+              </div>
+            </div><br>
+
+
+            <div class="div-center-two div-center-five container-center-two col-lg-5 col-md-12">
+              <img class="john-image" src="img/John.jpg">
+              <h4>John Doe</h4><br>
+              <a href="#"><img class="icon-ellipsis" src="img/Menu Vertical_48px.png"></a>
+              <div class="time">
+                <img class="icon" src="img/Time_50px.png">
+                <p>3 min ago</p><br>
+              </div>
+              <img src="img/epic-coder.jpg">
+              <p style="display: inline-block;margin-right: 15px;">Epic Coder</p>
+              <div style="background-color: #53d690;display: inline-block; border-radius: 50%;padding: 0px 3px 3px 3px;"><img class="icon" src="img/Paper Plane_50px.png"></div>
+              <p>India</p>
+
+              <div class="icon-letter">
+                <img src="img/Secured Letter_64px.png">
+              </div>
+
+              <div class="icon-bookmark">
+                <img class="icon" src="img/Bookmark_64px.png">
+              </div>
+
+              <h5>Senior Wordpress Developer</h5>
+              <button class="btn btn-primary " type="button">Full Time</button>
+              <h5 style="display: inline-block;">$ 30 / hr</h5>
+              <p style="color: #666666;margin-top: 17px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aliquam luctus <br> hendrerit metus, ut ullamcoper quam finibus at. Etiam id magna sit amet...</p><br>
+              <p style="color: #666666;" id="morePragragh">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aliquam luctus <br> hendrerit metus, ut ullamcoper quam finibus at. Etiam id magna sit amet...</p>
+              <a href="#" onclick="morePragragh()">view more</a><br><br>
+
+              <span>HTML</span>
+              <span>PHP</span>
+              <span>CSS</span>
+              <span>Javascript</span>
+              <span>Wordpress</span>
+
+              <hr style="margin-top: 2rem;margin-bottom: 2rem;">
+              <img class="icon" src="img/Love_52px.png">
+              <p><a href="#" class="like-comment" id="like" onclick="likeColor()">Like</a></p>
+              <img src="img/25.png">
+              <img class="icon" src="img/Comments_50px.png">
+              <p><a href="#" class="like-comment">Comment 15</a></p>
+              <div class="view">
+                <img class="icon" src="img/Eye_48px.png">
+                <p><a href="#" class="like-comment eye">Views 50</a></p>
+              </div>
+
+              <hr>
+
+              <a href="#blus-scroll" style="text-decoration: none;"><div class="blus">+</div></a>
+
+              <h4>John Doe</h4><br><br>
+              <div  class="time-two">
+                <img class="icon" src="img/Time_50px.png">
+                <p>3 min ago</p><br>
+              </div>
+
+              <p style="color: #666666;margin-left: 13px;">Lorem ipsum dolor sit amet,</p>
+              <div class="reply">
+                <img class="icon" src="img/Reply All Arrow_52px_1.png">
+                <p>Reply</p>
+              </div>
+
+              <div class="div-reply">
+                <h4>John Doe</h4><br><br>
+                <div  class="time-two">
+                  <img class="icon" src="img/Time_50px.png">
+                  <p>3 min ago</p><br>
+                </div>
+
+                <p style="color: #666666;margin-left: 13px;">Hi John</p>
+                <div class="reply">
+                  <img class="icon" src="img/Reply All Arrow_52px_1.png">
+                  <p>Reply</p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="div-reply-two">
+                <h4>John Doe</h4><br><br>
+                <div  class="time-two">
+                  <img class="icon" src="img/Time_50px.png">
+                  <p>3 min ago</p><br>
+                </div>
+
+                <p style="color: #666666;margin-left: 13px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aliquam luctus
+                  hendrerit metus, ut ullamcoper quam finibus at.</p>
+                <div class="reply">
+                  <img class="icon" src="img/Reply All Arrow_52px_1.png">
+                  <input type="button" value="Reply" class="add" id="addReply" style="background-color: white;border: 0; color: darkgrey;" onclick="addReply()">
+
+                  <fieldset id="buildyourReply"></fieldset>
+                  <input type="button" value="Add" class="add" id="reply" onclick="resetReply()"/>
+                  
+                  <div id="AddReply"></div>
+
+                  <!-- <div class="collection ulList"></div> -->
+                </div>
+              </div>
+
+              <div class="collection ulList"></div>
+
+              <div class="send">
+                <img class="john-image john-image2" src="img/John.jpg" id="blus-scroll">
+                <input class="form-control me-2" type="text" placeholder="Post a comment" aria-label="Post a comment" class="autocomplete" id="inputValue" >
+                <button class="btn waves-effect waves-light" id="li-generate">Send <i class="fa fa-search"></i></button>
+              </div>
+
+            </div><br>
+
+
+            <div class="div-left-two div-right-four col-lg-3 col-md-12">
+              <h4>Most Viewed People</h4>
+              <a href="#"><img class="icon-ellipsis" src="img/Menu Vertical_48px.png"></a>
+              <hr>
+              <img src="img/137296624_1762857667216023_5001889832414271592_n.jpg">
+              <h6>Jessica William</h6>
+              <div class="icon-plus">
+                <a href="#"><img src="img/Plus Math_52px.png"></a>
+              </div>
+              <p>Graphic Designer</p>
+
+              <img src="img/52540441_318597819008786_940723731905380352_n.jpg">
+              <h6>John Doe</h6>
+              <div class="icon-plus">
+                <a href="#"><img src="img/Plus Math_52px.png"></a>
+              </div>
+              <p>PHP Developer</p>
+
+              <img src="img/images (1).jpg">
+              <h6>Poonam</h6>
+              <div class="icon-plus">
+                <a href="#"><img src="img/Plus Math_52px.png"></a>
+              </div>
+              <p>Wordpress Developer</p>
+
+              <img src="img/depositphotos_34490345-stock-photo-confident-casual-unshaven-young-man.jpg">
+              <h6>Bill Gates</h6>
+              <div class="icon-plus">
+                <a href="#"><img src="img/Plus Math_52px.png"></a>
+              </div>
+              <p>C & C++ Developer</p>
+
+              <img src="img/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg">
+              <h6>Jessica William</h6>
+              <div class="icon-plus">
+                <a href="#"><img src="img/Plus Math_52px.png"></a>
+              </div>
+              <p>Graphic Designer</p>
+
+              <img src="img/138074050_3724079107615032_3895583162190385421_n.jpg">
+              <h6>John Doe</h6>
+              <div class="icon-plus">
+                <a href="#"><img src="img/Plus Math_52px.png"></a>
+              </div>
+              <p>PHP Developer</p>
+
+
+              <!-- view more -->
+              <div id="morePeople">
+                <img src="img/137296624_1762857667216023_5001889832414271592_n.jpg">
+                <h6>Jessica William</h6>
+                <div class="icon-plus">
+                  <a href="#"><img src="img/Plus Math_52px.png"></a>
+                </div>
+                <p>Graphic Designer</p>
+
+                <img src="img/52540441_318597819008786_940723731905380352_n.jpg">
+                <h6>John Doe</h6>
+                <div class="icon-plus">
+                  <a href="#"><img src="img/Plus Math_52px.png"></a>
+                </div>
+                <p>PHP Developer</p>
+
+                <img src="img/images (1).jpg">
+                <h6>Poonam</h6>
+                <div class="icon-plus">
+                  <a href="#"><img src="img/Plus Math_52px.png"></a>
+                </div>
+                <p>Wordpress Developer</p>
+              </div>
+
+              <a href="#" class="view-more" onclick="morePeople()">View More</a>
+            </div>
+
+
+            <div class="circle"></div>
+
+            <div class="div-chat col-lg-3 col-md-12">
+
+              <div class="chats">
+                <div class="number-messages">2</div>
+                <img src="img/Chat_50px.png">
+              </div>
+
+              <div class="chat-2">
+                <img src="img/download.jpg">
+              </div>
+
+              <div class="chat-1">
+                
+                <img src="img/images (4).jpg">
+                <div style="margin-right: -87px;" class="number-messages">2</div>
+
+              </div>
+
+
+
+
+            <!-- <fieldset id="buildyourform"></fieldset> -->
+            <!-- <input type="button" value="send" class="add" id="preview" /> -->
+            <!-- <input type="button" value="Add a field" class="add" id="add" /> -->
+            </div>
+
+        </div>
+
+          <div class="scroll-top-wrapper">
+            <a class="scroll_top" href="#top">
+              ^
+            </a>  
+          </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <script src="js/bobber.min.js"></script>
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
